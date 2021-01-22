@@ -24,8 +24,7 @@ public class LoginPage extends BasePage {
 		digitar(emailId, usuario);
 		digitar(senhaId, senha);
 		clicar(entrarId);
-		try {
-			// espera 7 segundos
+		try { 
 			Thread.sleep(7000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
