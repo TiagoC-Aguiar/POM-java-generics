@@ -16,13 +16,12 @@ public class BaseTest {
 	
 	@BeforeMethod
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "/home/tiago/Drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/home/user/Drivers/chromedriver");
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver, 20);
 //		driver.manage().window().fullscreen();		
 		driver.get("https://app.hubspot.com/login");
 		try {
-			// espera 7 segundos
 			Thread.sleep(7000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
